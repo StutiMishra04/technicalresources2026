@@ -1,0 +1,31 @@
+import java.util.*;
+public class A1Q3 {
+    public static void main(String[] args){
+        System.out.println("Enter the amount of numbers you wish to verify: ");
+        Scanner scn = new Scanner(System.in);
+        int t = scn.nextInt();
+
+        for(int i = 0; i < t ; i++){
+            System.out.println("Enter number: ");
+            int n = scn.nextInt();
+
+            int count = 0;
+            for(int div = 1; div <= n; div++){
+                if(n % div == 0){
+                    count++;
+                }
+            }
+                
+            if(count==2){
+                System.out.println("Prime");
+            }
+            else{
+                System.out.println("Composite");
+            }
+               
+               
+            
+        }
+        }
+    
+}
