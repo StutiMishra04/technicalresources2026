@@ -1,0 +1,15 @@
+import java.util.*;
+public class Digitcount {
+    public static void main(String[] args){
+        System.out.println("Enter number: ");
+        Scanner scn = new Scanner(System.in);
+        int num = scn.nextInt();
+        int  Dcount = 0;
+        while(num > 1){
+            num = num/10;
+            Dcount++;
+        }
+
+        System.out.println("Digit count is " + Dcount); 
+    }
+}
